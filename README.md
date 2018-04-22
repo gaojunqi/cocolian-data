@@ -51,3 +51,6 @@ Content-Encoding: gzip
 本项目中使用到的技术栈包括但不限于：
 - Spring Boot: 对外提供HTTP服务；
 - Google Protobuf：卡bin数据建模
+
+### 银联卡bin数据
+参考示例： http://doc.cocolian.org/essay/2017/10/09/bin/ 
