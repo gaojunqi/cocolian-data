@@ -1,0 +1,22 @@
+syntax = "proto2";
+option java_package = "org.cocolian.data.rpc";
+import "data_entity.proto";
+/**
+ * 获取所有的卡bin信息；
+ *
+**/
+message CardBinRequest {     
+    required string user_name = 1;//用户名
+    required string password = 2;//密码
+    
+    repeated int32 field = 21; //字段列表， 如果为空，则返回所有字段；
+}
+
+/**
+ * 返回卡bin信息
+ *
+**/
+message  CardBinResponse {
+	repeated CardBin card_bin = 21; //卡bin列表
+}
+

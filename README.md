@@ -1,8 +1,8 @@
-# cocolian-cardbin
+# cocolian-data 基础数据（码表）服务
 
 ## 接口说明
 
-提供最新卡bin库， 可以通过http://{域名}/cardbin 来读取。 默认可以通过http://api.cocolian.org/cardbin.csv 来获取。 
+提供最新的常用数据， 可以通过http://{域名}/cardbin 来读取。 默认可以通过http://api.cocolian.org/data/cardbin.csv 来获取。 
 接口使用示例如下
 
 ```bash
