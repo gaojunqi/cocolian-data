@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+# Run in cygwin
 # Author: Shamphone Lee
 
 JAVA="$(cygpath -pm $JAVA_HOME/bin/java)"
