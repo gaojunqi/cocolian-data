@@ -5,8 +5,8 @@ package org.cocolian.data;
 
 import java.util.List;
 
-import org.cocolian.data.rpc.DataService.CardBinRequest;
-import org.cocolian.data.rpc.DataService.CardBinResponse;
+import org.cocolian.data.rpc.DataRpcService.CardBinRequest;
+import org.cocolian.data.rpc.DataRpcService.CardBinResponse;
 import org.cocolian.rpc.sharder.RpcServiceClient;
 
 /**

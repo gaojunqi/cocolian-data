@@ -16,18 +16,11 @@
 		<sonar.exclusions>src/main/gen/**/*,src/test/gen/**/*</sonar.exclusions>
 	</properties>
 	<modules>
+		<module>cocolian-data-schema</module>
 		<module>cocolian-data-server</module>
 		<module>cocolian-data-facade</module>
 		<module>cocolian-data-tools</module>
 	</modules>
-	<dependencies>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-autoconfigure</artifactId>
-		</dependency>
-
-	</dependencies>
 	<developers>
 		<developer>
 			<id>shamphone</id>

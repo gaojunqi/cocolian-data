@@ -24,7 +24,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 
 /**
- * @author admin
+ * DataService的Spring配置
+ * @author shamphone@gmail.com
+ * @version 1.0.0
  *
  */
 @Configuration

@@ -2,8 +2,8 @@ package org.cocolian.data.rpc;
 
 
 import org.cocolian.data.CardBin;
-import org.cocolian.data.rpc.DataService.CardBinRequest;
-import org.cocolian.data.rpc.DataService.CardBinResponse;
+import org.cocolian.data.rpc.DataRpcService.CardBinRequest;
+import org.cocolian.data.rpc.DataRpcService.CardBinResponse;
 import org.cocolian.metric.Timer;
 
 import org.slf4j.Logger;

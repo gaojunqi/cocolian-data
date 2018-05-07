@@ -6,8 +6,8 @@ package org.cocolian.data.server;
 import static org.junit.Assert.assertEquals;
 
 import org.cocolian.data.rpc.CardBinController;
-import org.cocolian.data.rpc.DataService.CardBinRequest;
-import org.cocolian.data.rpc.DataService.CardBinResponse;
+import org.cocolian.data.rpc.DataRpcService.CardBinRequest;
+import org.cocolian.data.rpc.DataRpcService.CardBinResponse;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

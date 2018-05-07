@@ -15,7 +15,6 @@
  */
 package org.cocolian.data.server;
 
-import org.cocolian.data.DataConfiguration;
 import org.cocolian.rpc.server.RpcServerConfiguration;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -29,7 +28,7 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @Configuration
-@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class,RpcServerConfiguration.class,DataConfiguration.class})
+@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class,RpcServerConfiguration.class})
 public class TestConfiguration {
 
 }
