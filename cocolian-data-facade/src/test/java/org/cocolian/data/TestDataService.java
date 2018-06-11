@@ -28,6 +28,6 @@ public class TestDataService {
 	
 	@Test
 	public void testGetCardBin(){
-		assertEquals(service.getCardBins().size(), 1);
+		assertEquals(service.getCardBins().size(), 4856);
 	}
 }

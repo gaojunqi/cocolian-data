@@ -8,11 +8,14 @@ import static org.junit.Assert.assertEquals;
 import org.cocolian.data.rpc.CardBinController;
 import org.cocolian.data.rpc.DataRpcService.CardBinRequest;
 import org.cocolian.data.rpc.DataRpcService.CardBinResponse;
+import org.cocolian.data.server.repository.CardBinRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -20,9 +23,12 @@ import org.springframework.test.context.junit4.SpringRunner;
  * @author admin
  *
  */
+
 @RunWith(SpringRunner.class)
 @ActiveProfiles("dev")
-@SpringBootTest(classes = {DataServerConfiguration.class,TestConfiguration.class}, webEnvironment = WebEnvironment.NONE)
+@EnableAutoConfiguration
+@SpringBootTest(classes = {DataServerConfiguration.class,TestConfiguration.class,
+		DatabaseConfiguration.class,CardBinRepository.class}, webEnvironment = WebEnvironment.NONE)
 public class TestCardBinController {
 
 	@Autowired
@@ -38,6 +44,6 @@ public class TestCardBinController {
 		request.setUserName("test");
 		request.setPassword("password");
 		CardBinResponse response = controller.process(request.build());
-		assertEquals(response.getCardBinCount(),1 );
+		assertEquals(response.getCardBinCount(),4856 );
 	}
 }
