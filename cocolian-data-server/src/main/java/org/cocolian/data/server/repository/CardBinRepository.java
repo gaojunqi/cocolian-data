@@ -23,7 +23,6 @@ import java.util.List;
 public class CardBinRepository  {
 
     private static final Logger logger = LoggerFactory.getLogger(CardBinRepository.class);
-
     private JdbcProtobufTemplate jdbcProtobufTemplate;
 
     @Autowired
