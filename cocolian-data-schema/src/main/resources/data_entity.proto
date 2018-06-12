@@ -21,7 +21,7 @@ message  CardBin {
 	
 	optional int32  issuer_start_position = 13; //发卡行起始字节
 	optional int32  issuer_length = 14; //发卡行磁道长度
-	optional int32  issuer_no = 15; //发卡行标识
+	optional int64  issuer_no = 15; //发卡行标识
 	optional int32  issuer_track_no = 16; //发卡行信息所在磁道
 
 	enum CardType {

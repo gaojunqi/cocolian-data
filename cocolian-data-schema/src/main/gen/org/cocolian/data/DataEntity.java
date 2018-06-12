@@ -37,7 +37,7 @@ public final class DataEntity {
       "\022\026\n\016account_length\030\n \001(\005\022\022\n\naccount_no\030\013" +
       " \001(\t\022\030\n\020account_track_no\030\014 \001(\005\022\035\n\025issuer" +
       "_start_position\030\r \001(\005\022\025\n\rissuer_length\030\016" +
-      " \001(\005\022\021\n\tissuer_no\030\017 \001(\005\022\027\n\017issuer_track_" +
+      " \001(\005\022\021\n\tissuer_no\030\017 \001(\003\022\027\n\017issuer_track_" +
       "no\030\020 \001(\005\022$\n\tcard_type\030\021 \001(\0162\021.CardBin.Ca" +
       "rdType\"T\n\010CardType\022\025\n\021UNKNOWN_CARD_TYPE\020" +
       "\000\022\016\n\nDEBIT_CARD\020\001\022\017\n\013CREDIT_CARD\020\002\022\020\n\014PR" +

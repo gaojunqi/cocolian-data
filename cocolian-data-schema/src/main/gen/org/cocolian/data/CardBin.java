@@ -35,7 +35,7 @@ private static final long serialVersionUID = 0L;
     accountTrackNo_ = 0;
     issuerStartPosition_ = 0;
     issuerLength_ = 0;
-    issuerNo_ = 0;
+    issuerNo_ = 0L;
     issuerTrackNo_ = 0;
     cardType_ = 0;
   }
@@ -147,7 +147,7 @@ private static final long serialVersionUID = 0L;
           }
           case 120: {
             bitField0_ |= 0x00004000;
-            issuerNo_ = input.readInt32();
+            issuerNo_ = input.readInt64();
             break;
           }
           case 128: {
@@ -746,13 +746,13 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int ISSUER_NO_FIELD_NUMBER = 15;
-  private int issuerNo_;
+  private long issuerNo_;
   /**
    * <pre>
    *发卡行标识
    * </pre>
    *
-   * <code>optional int32 issuer_no = 15;</code>
+   * <code>optional int64 issuer_no = 15;</code>
    */
   public boolean hasIssuerNo() {
     return ((bitField0_ & 0x00004000) == 0x00004000);
@@ -762,9 +762,9 @@ private static final long serialVersionUID = 0L;
    *发卡行标识
    * </pre>
    *
-   * <code>optional int32 issuer_no = 15;</code>
+   * <code>optional int64 issuer_no = 15;</code>
    */
-  public int getIssuerNo() {
+  public long getIssuerNo() {
     return issuerNo_;
   }
 
@@ -870,7 +870,7 @@ private static final long serialVersionUID = 0L;
       output.writeInt32(14, issuerLength_);
     }
     if (((bitField0_ & 0x00004000) == 0x00004000)) {
-      output.writeInt32(15, issuerNo_);
+      output.writeInt64(15, issuerNo_);
     }
     if (((bitField0_ & 0x00008000) == 0x00008000)) {
       output.writeInt32(16, issuerTrackNo_);
@@ -940,7 +940,7 @@ private static final long serialVersionUID = 0L;
     }
     if (((bitField0_ & 0x00004000) == 0x00004000)) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(15, issuerNo_);
+        .computeInt64Size(15, issuerNo_);
     }
     if (((bitField0_ & 0x00008000) == 0x00008000)) {
       size += com.google.protobuf.CodedOutputStream
@@ -1121,7 +1121,8 @@ private static final long serialVersionUID = 0L;
     }
     if (hasIssuerNo()) {
       hash = (37 * hash) + ISSUER_NO_FIELD_NUMBER;
-      hash = (53 * hash) + getIssuerNo();
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getIssuerNo());
     }
     if (hasIssuerTrackNo()) {
       hash = (37 * hash) + ISSUER_TRACK_NO_FIELD_NUMBER;
@@ -1293,7 +1294,7 @@ private static final long serialVersionUID = 0L;
       bitField0_ = (bitField0_ & ~0x00001000);
       issuerLength_ = 0;
       bitField0_ = (bitField0_ & ~0x00002000);
-      issuerNo_ = 0;
+      issuerNo_ = 0L;
       bitField0_ = (bitField0_ & ~0x00004000);
       issuerTrackNo_ = 0;
       bitField0_ = (bitField0_ & ~0x00008000);
@@ -2400,13 +2401,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int issuerNo_ ;
+    private long issuerNo_ ;
     /**
      * <pre>
      *发卡行标识
      * </pre>
      *
-     * <code>optional int32 issuer_no = 15;</code>
+     * <code>optional int64 issuer_no = 15;</code>
      */
     public boolean hasIssuerNo() {
       return ((bitField0_ & 0x00004000) == 0x00004000);
@@ -2416,9 +2417,9 @@ private static final long serialVersionUID = 0L;
      *发卡行标识
      * </pre>
      *
-     * <code>optional int32 issuer_no = 15;</code>
+     * <code>optional int64 issuer_no = 15;</code>
      */
-    public int getIssuerNo() {
+    public long getIssuerNo() {
       return issuerNo_;
     }
     /**
@@ -2426,9 +2427,9 @@ private static final long serialVersionUID = 0L;
      *发卡行标识
      * </pre>
      *
-     * <code>optional int32 issuer_no = 15;</code>
+     * <code>optional int64 issuer_no = 15;</code>
      */
-    public Builder setIssuerNo(int value) {
+    public Builder setIssuerNo(long value) {
       bitField0_ |= 0x00004000;
       issuerNo_ = value;
       onChanged();
@@ -2439,11 +2440,11 @@ private static final long serialVersionUID = 0L;
      *发卡行标识
      * </pre>
      *
-     * <code>optional int32 issuer_no = 15;</code>
+     * <code>optional int64 issuer_no = 15;</code>
      */
     public Builder clearIssuerNo() {
       bitField0_ = (bitField0_ & ~0x00004000);
-      issuerNo_ = 0;
+      issuerNo_ = 0L;
       onChanged();
       return this;
     }

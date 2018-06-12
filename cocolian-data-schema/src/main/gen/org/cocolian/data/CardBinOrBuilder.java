@@ -286,7 +286,7 @@ public interface CardBinOrBuilder extends
    *发卡行标识
    * </pre>
    *
-   * <code>optional int32 issuer_no = 15;</code>
+   * <code>optional int64 issuer_no = 15;</code>
    */
   boolean hasIssuerNo();
   /**
@@ -294,9 +294,9 @@ public interface CardBinOrBuilder extends
    *发卡行标识
    * </pre>
    *
-   * <code>optional int32 issuer_no = 15;</code>
+   * <code>optional int64 issuer_no = 15;</code>
    */
-  int getIssuerNo();
+  long getIssuerNo();
 
   /**
    * <pre>
